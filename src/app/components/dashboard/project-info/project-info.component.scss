@@ -31,14 +31,6 @@
 .icon:hover {
   color: #007bff;
 }
-// .bi {
-//   display: inline-block;
-//   font-size: 24px;
-//   color:#6D6A6A;
-//   font-weight: 400;
-//   margin-right: 10px;
-//   cursor: pointer;
-// }
 
 .bi:hover {
   color: #007bff;
@@ -83,7 +75,8 @@
 
 .AssignUser{
   padding-bottom:10px;
-  flex:0 1 130px;
+  flex:1 1;
+  max-width: 130px;
   height: 40px;
   border: solid #AAA9A9 1px;
   border-radius: 8px;
@@ -142,4 +135,19 @@
   width:100%;
   height:20px;
   overflow: clip;
+}
+
+@media screen and (max-width:800px){
+  .AssignUser{
+    border:none;
+    max-width:fit-content;
+  }
+
+  .AssignUser .AssignUsertext{
+    display: none;
+  }
+
+  .AssignUser .fa-chevron-down{
+    display: none;
+  }
 }

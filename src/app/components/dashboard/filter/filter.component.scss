@@ -120,8 +120,8 @@ label input:checked{
   color: #007bff;
 }
 
-@media screen and (max-width:1000px)
-{
+
+@media screen and (max-width:1000px){
   .horizontal-div input[type="text"]{
     width: auto;
     height: auto;
@@ -135,6 +135,7 @@ label input:checked{
   .buttonAddnew{
     width: auto;
     max-height:42px;
+
   }
 
   .replaceFinalReportTemplate{
@@ -142,4 +143,40 @@ label input:checked{
     height: auto;
     //flex:1;
   }
+
 }
+
+@media screen and (max-width:600px)
+{
+  .horizontal-div input[type="text"]{
+    width: auto;
+    height: auto;
+  }
+  .horizontal-div input[type="date"] {
+    display: none;
+  }
+  .buttonAddnew{
+    width: auto;
+    //border: none;
+    
+  }
+  .buttonAddnew h6{
+    display: none;
+  }
+  .replaceFinalReportTemplate{
+    width: auto;
+    height: auto;
+    border: none;
+    //flex:1;
+  }
+
+  .replaceFinalReportTemplate h6{
+    display: none;
+  }
+
+  label{
+    flex-direction: column;
+    font-size:12px;
+  }
+}
+

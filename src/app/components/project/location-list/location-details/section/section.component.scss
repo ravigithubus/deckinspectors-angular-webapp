@@ -170,7 +170,8 @@ button.highlighted {
 }
 .locationsectioninformation{
   border-radius: 16px;
-  min-width: 100%;
+  flex-shrink:1;
+  //width:90%;
   padding-top:5px;
   background-color: #fff;
 }

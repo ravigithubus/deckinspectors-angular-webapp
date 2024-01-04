@@ -18,7 +18,10 @@ export const addPreviousStateModel = createReducer(
 const addPreviousStateModelParams = (state: BackNavigationStateModel, project: ProjectListElement) => {
   let previousState = new PreviousStateModel();
   previousState.stack = [...state.stack]
-  previousState.stack.push(project);
+  if(!previousState.stack.includes(project)){
+    previousState.stack.push(project);
+  }
+  console.log(previousState.stack);
   return previousState;
 }
 
@@ -26,5 +29,6 @@ const removePreviousStateModelParams = (state: BackNavigationStateModel, project
   let previousState = new PreviousStateModel();
   previousState.stack = [...state.stack];
   previousState.stack.pop();
+  console.log(previousState.stack);
   return previousState;
 }

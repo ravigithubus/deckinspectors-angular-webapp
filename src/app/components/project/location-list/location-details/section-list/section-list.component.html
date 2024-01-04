@@ -10,7 +10,7 @@
           </span>
         </div>
       </div>
-  <div cdkDropList  class="full-width scrollable-container" (cdkDropListDropped)="dropSection($event)">
+  <div cdkDropList  class="scrollable-container" (cdkDropListDropped)="dropSection($event)">
       <div *ngFor="let section of sections" cdkDrag>
         <app-section-list-element
           (click)="fetchDataForGivenSectionId(section)"
